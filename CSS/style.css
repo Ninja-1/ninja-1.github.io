@@ -1,0 +1,27 @@
+body{
+    background-image: url(https://res.cloudinary.com/dichsudvk/image/upload/v1654282847/Neposedy/1_tarh9j.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+.header{
+    font-family: Tahoma, Sans-serif;
+    color: #509b50;
+    text-shadow: 0px 0px 20px #fade0a;
+    font-size: 150px;
+    line-height: 1.5;
+    margin: 40px auto;
+}
+.goroda{
+    color: aliceblue;
+    text-shadow: 0px 0px 20px #101010;
+}
+.conteiner-2{
+    padding-top: 300px;
+}
+.form-btn{
+    margin: 20px 0;
+    font-size: 40px;
+    /*line-height: 1.5;*/ 
+    box-shadow: -10px -10px 15px #509b50;
+}
