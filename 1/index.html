@@ -5,40 +5,82 @@
     <meta http-equiv="X-ua-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/favicon.ico">
-    <title>НЕПОСЕДЫ</title>
+    <title>Звголовок страницы</title>
+    <!-- Bootstrap core CSS -->
     <link href="CSS/bootstrap.css" rel="stylesheet">
     <link href="CSS/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif] -->
 </head>
-<body>   
-    <main class="main">
-     <div class="conteiner">
-         <div class="row">
-             <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                <a class="header text-center" href="">НЕПОСЕДЫ</a> 
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-lg-2 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">                 
-                 <h2 class="goroda">Краматорск<br>Славянск<br>Константиновка</h2>                 
-             </div>
-         </div>
-         <div class="conteiner-2">
-         <div class="row">
-             <div class="col-lg-4 col-lg-offset-7 col-md-5 col-md-offset-6 col-sm-6  col-sm-offset-3 col-xs-8 col-xs-offset-2">
-                <a href="post-1.html">               
-                 <button class="button btn-lg btn-block form-btn">Не сидим по выходным</button>
-                 </a>
-                 <button class="button btn-lg btn-block form-btn">Непоседы и беседы</button>
-                 <button class="button btn-lg btn-block form-btn">Видео друзей</button>
-                 <button class="button btn-lg btn-block form-btn">Непоседы в походах</button>
-                 <button class="button btn-lg btn-block form-btn">Непоседы на отдыхе</button>
-                 <button class="button btn-lg btn-block form-btn">Юмор в фотографиях</button>
-             </div>
-         </div>             
-         </div>
 
-     </div>
-    </main> 
-      
+<body>
+  <!-- Тег main - это разметка HTMF5, надо про нее почитать, означает что в этом теге находится главная информация на сайте, первый экран, который увидит пользователь -->
+   <main class="main">
+       <div class="container"> <!--загоняем в контейнер, чтобы по краям были отступы-->
+           <div class="header">
+              
+              <div class="row">
+                 
+                  <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="logo">
+                      <img src="img/01.png" alt="Логотип земля">
+                    </div>                  
+                  </div>
+                  
+              <div class="col-lg-2 col-lg-offset-4 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-0 col-xs-12">
+                  <a class="phone-link" href="">№ телефона</a>
+              </div>
+              
+              <div class="col-md-3 col-sm-4 col-xs-12">
+                  <div class="wrap"> <!-- "обертка"  для кнопкии чтоб поставить ее по оси стоки-->
+                      <div class="wrap-block">
+                          <button class="button header-btn">
+                            получить консутацию
+                          </button>
+                      </div>
+                  </div>
+              </div>              
+              </div>
+               
+           </div>
+           <div class="main-content"> <!--будет следующий заголовок-->
+               <div class="row">
+                 <div class="col-md-7 col-lg-6 col-sm-12">
+                     <div class="main-title">
+                        <h1>Автоматизированная штукаткрка стен</h1>
+                        <p class="main-subtitle">Идеально ровные стены <br>в кратчайшие сроки</p>
+                        <span>
+                            Стоимость работ <br>
+                            от <strong>300</strong>руб/м<sup>2</sup>
+                        </span>
+                         <strong class="main-trigger">
+                             оплата по факту!
+                         </strong>
+                     </div>
+                 </div>
+                 <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2">
+                     <div class="main-form">
+                         <h2 class="main-form-header">Для расчета точной стоимости <br> закажите <strong>выезд замерщика</strong></h2>
+                         <form action="#">
+                            <label for="#">Ваше имя</label>
+                             <input class="main-form-input" type="text" >
+                            <label for="#">Номер телефона</label>
+                             <input class="main-form-input" type="text" >
+                             <button class="main-form-btn button" type="submit">Оставьте заявку</button>
+                             <small>Подарок в день обращения</small>
+                         </form>
+                         
+                     </div>
+                 </div>  
+               </div>
+           </div>
+       </div>
+   </main>
+   
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
 </body>
 </html>
