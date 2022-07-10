@@ -1,4 +1,6 @@
-@btn-color: #F0AD4E;
+@btn-color: grey; /*было #F0AD4E желтое*/
+@neposedy: #ffffff; /*было #509b50 зеленоватое*/
+@neposedy-shadow: grey; /*было желтоватое #fade0a*/
 /*
 body{
     background-image: url(https://res.cloudinary.com/dichsudvk/image/upload/v1654282847/Neposedy/1_tarh9j.png);
@@ -7,11 +9,11 @@ body{
     background-repeat: no-repeat;    
 }
 */
-img {
+/*img {
 	width: 100%;
-}
+}*/
 .main {	
-	background: /*#F0AD4E*/ url(../img/1_.png) center center no-repeat;		
+	background: @btn-color url(../img/4_.jpg) center no-repeat;		
 	background-size: cover;
 }
 .header{
@@ -22,34 +24,34 @@ img {
 	letter-spacing: 9px;
 	font-weight: 600;
     font-family: Tahoma, Sans-serif;
-    color: #509b50;	
-    text-shadow: 0px 0px 20px #fade0a;
+    color: @neposedy;	
+    text-shadow: 0px 0px 20px @neposedy-shadow;
 	animation-delay: 0.5s;
 	&:hover {
 		cursor: none;		
 		will-change: unset;	
-		color: #509b50;
+		color: @neposedy;
 		&:focus {
 			text-decoration: none;
-			color: #509b50;
+			color: @neposedy;
 		}
 	}
 }
 .header::after {
-	content: '';
+	content: '';	
 	display: block;
 	width: 100%;
 	height: 10px;	
 	transform: scaleX(0);
-	background-color: #509b50;
+	background-color: @neposedy;
 	transition: all 0.3s;
 }
 .header:hover::after {
-	color: #509b50;
+	color: @neposedy;
 	transform: scaleX(1);
 }
 .goroda{	
-    color: aliceblue;
+    color: @neposedy;
 	font-size: 25px;
     text-shadow: 0px 0px 40px #101010;
 	animation-delay: 1s;
@@ -58,7 +60,7 @@ img {
 
 .conteiner-2{
     padding-top: 90px;
-	padding-bottom: 90px;
+	padding-bottom: 200px;
 	
 }
 a:hover {
@@ -71,7 +73,7 @@ a:hover {
 }*/	
 .button {
 	background-color: @btn-color;
-	color: #FFFFFF;
+	color: @neposedy;
 	margin: 10px;
 	font-size: 30px;
 	border: none;
@@ -79,7 +81,7 @@ a:hover {
 	box-shadow: -2px -2px 5px #0a0a0a;
 	transition: all 0.3s;	
     &:hover {
-       transform: scale(1.05);	   
+       transform: scale(1.02);	   
 	   /*color: #CF231F;*/	
 	   box-shadow: -12px -12px 15px #0a0a0a;	
        background-color: lighten(@btn-color, 10%);

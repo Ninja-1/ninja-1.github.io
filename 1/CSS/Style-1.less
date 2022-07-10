@@ -1,29 +1,33 @@
-@btn-color: #F0AD4E;
-@btn-txt-color: #FFFFFF;
+@btn-color: grey; /*было #F0AD4E желтое*/
+@neposedy: #ffffff; /*было #509b50 зеленоватое*/
+@neposedy-shadow: grey; /*было желтоватое #fade0a*/
 
+* {
+	margin-top: 0;
+}
 
 body{
-   background-color: #9FBDE1;
+   background-color: @btn-color; 
 }
-
 .header-vihod {
-	margin-top: -20px; /*убрал отступ сверху*/
-	color: crimson; /*Цвет заголовка*/
+	/*margin-top: 30px;*/ /*убрал отступ сверху*/
     height: 130px; /*высота строки*/
-    text-align: center; /*Звголовок в центр*/    
-    text-shadow: 0px 0px 7px #77f22b;
-	background: #9FBDE1 url(../img/head/head_1.JPG) center no-repeat;
+    text-align: center; /*Звголовок в центр*/ 
+	background: grey url(../img/head/head_1-1.JPG) center no-repeat;
+	border-radius: 15px;
     background-size: cover; /*Рисунок занимает всю ширину блока*/
 }
-
 h2 {
+	/*margin-top: -30px;*/	
     font-family: Tahoma, Sans-serif;
+	color: @neposedy;  /*Цвет заголовка*/
+	text-shadow: 0px 0px 7px @neposedy-shadow;
     font-size: 45px;
+	font-weight: 550; /*жирный шрифт*/
 	animation-delay: 0.5s;
 	transition: all 0.3s;
 }
-
-.spisok {
+.spisok {	
 	margin-top: 20px;
 	padding: 0.2px;
     background-color: @btn-color; 	
@@ -50,38 +54,44 @@ h2 {
 		}
 	}*/
 }
-a:hover {
-	text-decoration: none;	
+a{
+	color: @neposedy;	
+	&:hover {		
+		text-decoration: none;
+	}	
 }
+
 .fotorama {	
+	display: inline-block;
+	/*position: absolute;*/ 
 	margin-top: 20px;	
-	margin-bottom: 30px;
+	margin-bottom: 20px;	
 	animation-delay: 0.5s;
 	transition: all 0.3s;
-	/*display: inline-block;*/
-	/*text-align: center;*/
 }
 
 h3{
     font-family: Tahoma, Sans-serif;
-	color: @btn-txt-color;
+	color: @neposedy;
     font-size: 25px;
     padding-bottom: 10px;    
 }
-li{
+li{	
 	margin-left: -40px;
 	padding: 10px;    
 	list-style-type: none;
 }
+
 .box {
-	height: 720px;
+	height: 700px;
 }
+
 .button {
 	background-color: @btn-color;
-	height: 60px;
-	color: @btn-txt-color;
-	margin-top: 20px;
-	font-size: 20px;
+	height: 40px;
+	color: @neposedy;
+	margin-top: 0px;
+	font-size: 12px;
 	border: none;
 	border-radius: 8px;
 	box-shadow: -2px -2px 5px #0a0a0a;	
@@ -119,3 +129,29 @@ li{
 	animation-delay: 1.9s;
 }
 
+/*медиа запросы*/
+@media (max-width: 992px) {		
+	h2	{
+		font-size: 40px;
+		/*font-weight: 100;*/
+	}	
+	.button {
+		font-size: 20px;
+		margin-top: 10px;
+	}
+}
+@media (max-width: 768px) {
+	.header-vihod {
+		font-size: 20px;				
+	}
+	.goroda {
+		font-size: 15px;
+	}
+	.fotorama {
+		data-width: 100px;
+	}
+	.button {
+		font-size: 20px;
+		margin-top: 10px;
+	}
+}
