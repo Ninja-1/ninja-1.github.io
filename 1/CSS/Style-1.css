@@ -5,9 +5,10 @@
 * {
   margin-top: 0;
 }
-/*body {
-   background-color: @btn-color; 
-}*/
+body {
+  background: url(../img/h12.JPG) center no-repeat;
+  background-size: cover;
+}
 .header-vihod {
   display: inline-block;
   width: 100%;
@@ -17,7 +18,7 @@
   /*высота строки*/
   text-align: center;
   /*Звголовок в центр*/
-  background: grey url(../img/head/h1.JPG) center no-repeat;
+  background: url(../img/head/h1.JPG) center no-repeat;
   background-size: cover;
   /*Рисунок занимает всю ширину блока*/
   border-radius: 15px;
