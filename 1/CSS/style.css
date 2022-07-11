@@ -56,10 +56,10 @@ body{
   font-size: 25px;
   text-shadow: 0px 0px 40px #101010;
   animation-delay: 1s;
-  padding-top: 30px;
+  padding-top: 0px;
 }
 .conteiner-2 {
-  padding-top: 90px;
+  padding-top: 80px;
   padding-bottom: 200px;
 }
 a:hover {
@@ -121,6 +121,9 @@ a:hover {
   }
   .goroda {
     font-size: 15px;
+  }
+  .conteiner-2 {
+    padding-top: 20px;
   }
   .button {
     font-size: 20px;

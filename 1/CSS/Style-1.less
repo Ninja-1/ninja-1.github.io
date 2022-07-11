@@ -10,17 +10,19 @@ body{
    background-color: @btn-color; 
 }
 .header-vihod {
+	display: inline-block;
+	width: 100%;
 	/*margin-top: 30px;*/ /*убрал отступ сверху*/
     height: 130px; /*высота строки*/
     text-align: center; /*Звголовок в центр*/ 
-	background: grey url(../img/head/head_1-1.png) center no-repeat;
-	border-radius: 15px;
+	background: grey url(../img/head/head_1-1.png) center no-repeat;	
     background-size: cover; /*Рисунок занимает всю ширину блока*/
+	border-radius: 15px;
 }
 h2 {
-	/*margin-top: -30px;*/	
+	margin-top: -30px;	
     font-family: Tahoma, Sans-serif;
-	color: @neposedy;  /*Цвет заголовка*/
+	color: @neposedy;  /*Цвет заголовка*/	
 	text-shadow: 0px 0px 7px @neposedy-shadow;
     font-size: 45px;
 	font-weight: 550; /*жирный шрифт*/
@@ -35,7 +37,7 @@ h2 {
     vertical-align: top;
     text-align: center;
     padding-bottom: 20px;
-    font-size: 15px;  
+    font-size: 12px;  
 	box-shadow: -2px -2px 5px #0a0a0a;
 	/*border: 2px solid red;*/ /*обводка*/
 	transition: all 0.3s;
@@ -106,6 +108,7 @@ li{
 			transform: scale(1);				
 			box-shadow: 2px 2px 10px #0a0a0a;	
 			background-color: @btn-color;
+		   border: none;
 		}
 	}
     
@@ -138,6 +141,9 @@ li{
 	.button {
 		font-size: 20px;
 		margin-top: 10px;
+	}
+	.box {
+	height: 250px;
 	}
 }
 @media (max-width: 768px) {
