@@ -50,10 +50,10 @@ h2 {
   box-shadow: -2px -2px 5px #0a0a0a;
   /*border: 2px solid red;*/
   /*обводка*/
+  transition: all 0.3s;
   /*position: absolute;
 	z-index: 99;*/
   animation-delay: 1s;
-  transition: all 0.3s;
   /*&:hover {
        transform: scale(1.05);	  	
 	   box-shadow: -12px -12px 15px #0a0a0a;	
