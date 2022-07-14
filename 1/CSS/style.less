@@ -1,6 +1,7 @@
-@btn-color: grey; /*было #F0AD4E желтое*/
-@neposedy: #ffffff; /*было #509b50 зеленоватое*/
-@neposedy-shadow: grey; /*было желтоватое #fade0a*/
+@btn-color: #5BC0DE; /*было #F0AD4E желтое*/
+@neposedy: #5BC0DE; /*было #509b50 зеленоватое*/
+@all-text: #ffffff;
+@neposedy-shadow: green; /*было желтоватое #fade0a*/
 /*
 body{
     background-image: url(https://res.cloudinary.com/dichsudvk/image/upload/v1654282847/Neposedy/1_tarh9j.png);
@@ -13,13 +14,12 @@ body{
 	width: 100%;
 }*/
 .main {	
-	background: @btn-color url(../img/4_.jpg) center no-repeat;		
+	background: @btn-color url(../img/41_.jpg) center no-repeat;		
 	background-size: cover;
 }
 .header{
 	display: block;
-	margin-top: 30px;
-	/*line-height: 1;*/
+	margin-top: 30px;	 
 	font-size: 100px;
 	letter-spacing: 9px;
 	font-weight: 600;
@@ -73,7 +73,7 @@ a:hover {
 }*/	
 .button {
 	background-color: @btn-color;
-	color: @neposedy;
+	color: @all-text;
 	margin: 10px;
 	font-size: 30px;
 	border: none;

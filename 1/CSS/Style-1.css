@@ -5,10 +5,15 @@
 * {
   margin-top: 0;
 }
-body {
-  background: url(../img/h12.JPG) center no-repeat;
-  background-size: cover;
+.foto {
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-700px);
 }
+/*body {
+   background: url(../img/h121.JPG) center no-repeat;
+	background-size: cover;
+}*/
 .header-vihod {
   display: inline-block;
   width: 100%;
@@ -24,14 +29,14 @@ body {
   border-radius: 15px;
 }
 body {
-  background-color: grey;
+  background-color: #5BC0DE;
 }
 h2 {
   margin-top: -30px;
   font-family: Tahoma, Sans-serif;
-  color: #ffffff;
+  color: #5BC0DE;
   /*Цвет заголовка*/
-  text-shadow: 0px 0px 7px grey;
+  text-shadow: 0px 0px 7px green;
   font-size: 45px;
   font-weight: 550;
   /*жирный шрифт*/
@@ -41,7 +46,7 @@ h2 {
 .spisok {
   margin-top: 20px;
   padding: 0.2px;
-  background-color: grey;
+  background-color: #5BC0DE;
   border-radius: 10px;
   vertical-align: top;
   text-align: center;
@@ -94,7 +99,7 @@ li {
   height: 700px;
 }
 .button {
-  background-color: grey;
+  background-color: #5BC0DE;
   height: 40px;
   color: #ffffff;
   margin-top: 0px;
@@ -109,12 +114,12 @@ li {
   transform: scale(1.05);
   /*color: #CF231F;*/
   box-shadow: -12px -12px 15px #0a0a0a;
-  background-color: #9a9a9a;
+  background-color: #85d0e7;
 }
 .button:hover:focus {
   transform: scale(1);
   box-shadow: 2px 2px 10px #0a0a0a;
-  background-color: grey;
+  background-color: #5BC0DE;
   border: none;
 }
 .bt-1 {
