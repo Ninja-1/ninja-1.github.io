@@ -2,37 +2,24 @@
 /*было #F0AD4E желтое*/
 /*было #509b50 зеленоватое*/
 /*было желтоватое #fade0a*/
-* {
-  margin-top: 0;
-}
 .foto {
   position: absolute;
   margin-left: 50%;
   transform: translateX(-700px);
 }
-/*body {
-   background: url(../img/h121.JPG) center no-repeat;
-	background-size: cover;
-}*/
 .header-vihod {
   display: inline-block;
   width: 100%;
-  /*margin-top: 30px;*/
-  /*убрал отступ сверху*/
   height: 130px;
   /*высота строки*/
   text-align: center;
   /*Звголовок в центр*/
-  /*background: url(https://res.cloudinary.com/dichsudvk/image/upload/v1657646148/Head/h_1_vxqx93.jpg) center no-repeat;*/
-  /*background-size: cover;*/
-  /*Рисунок занимает всю ширину блока*/
-  border-radius: 15px;
 }
 body {
   background-color: #5BC0DE;
 }
 h2 {
-  margin-top: -30px;
+  margin-top: -20px;
   font-family: Tahoma, Sans-serif;
   color: #5BC0DE;
   /*Цвет заголовка*/
@@ -43,76 +30,180 @@ h2 {
   animation-delay: 0.5s;
   transition: all 0.3s;
 }
-.spisok {
-  margin-top: 20px;
-  padding: 0.2px;
+.acor-container {
+  margin: 30px 0;
+  height: 200px;
+  /*Высота блока с датами выездов*/
+}
+.acor-container .acor-body {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  height: 0;
+  color: rgba(0, 0, 0, 0);
+  background-color: #BFE2FF;
+  line-height: 10px;
+  /*padding: 0 10px*/
+  box-sizing: border-box;
+  transition: color 0.5s, padding 0.5s;
+  /*появление даты и  названия выезда*/
+  overflow: hidden;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  /*box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);*/
+  /*непонятно чья тень!*/
+  z-index: 50;
+}
+/*не понятно для чего*/
+/*.acor-container .acor-body p{  		
+    margin: 0 0 10px;
+}*/
+/*Кнопка с надписью ГОДа*/
+.acor-container label {
+  cursor: pointer;
   background-color: #5BC0DE;
-  border-radius: 10px;
-  vertical-align: top;
+  display: block;
+  padding: 10px 10px;
+  width: 100%;
+  color: #BFE2FF;
+  /*Цвет надписи года*/
+  font-weight: 100;
+  box-sizing: border-box;
+  border-radius: 8px;
+  /*Радиус кнопки*/
+  z-index: 100;
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  /*шрифт ГОДА*/
   text-align: center;
-  padding-bottom: 20px;
+  margin: 5px 0 5px;
+  box-shadow: -3px -3px 5px #0a0a0a;
+  /*тень не активных кнопок*/
+  transition: color 0.3s;
+  /*---*/
+}
+.acor-container label:hover {
+  transform: scale(1.05);
+  /*color: #CF231F;*/
+  /*text-decoration: none;*/
+  box-shadow: -12px -12px 15px #0a0a0a;
+  /* background-color: lighten(@btn-color, 10%);*/
+}
+.acor-container label:hover:focus {
+  transform: scale(1);
+  box-shadow: 2px 2px 10px #0a0a0a;
+  /*background-color: @btn-color;*/
+}
+.acor-container label:hover {
+  color: #FFF;
+  transition: 0.3s;
+  /*время нажатия кнопки ГОДА*/
+}
+/*Отменяет точки списка*/
+.acor-container input {
+  display: none;
+}
+/*Стрелочка справа:*/
+/*.acor-container label:before {
+    content: '\276F';
+    float: right;
+}*/
+.acor-container input {
+  /*---*/
+}
+.acor-container input:hover {
+  transform: scale(1.05);
+  /*color: #CF231F;*/
+  /*text-decoration: none;*/
+  box-shadow: -12px -12px 15px #0a0a0a;
+  /* background-color: lighten(@btn-color, 10%);*/
+}
+.acor-container input:hover:focus {
+  transform: scale(1);
+  box-shadow: 2px 2px 10px #0a0a0a;
+  /*background-color: @btn-color;*/
+}
+/*Кнопка ГОДА нажатая*/
+.acor-container input:checked + label {
+  background-color: #5BC0DE;
+  display: block;
+  color: #FFF;
+  box-shadow: 0px 0px 5px #0a0a0a;
+  /*Тень нажатой кнопки ГОДА*/
+  z-index: 100;
+}
+/*поворот стрелки:*/
+/*.acor-container input:checked + label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}*/
+/*Выпадающая табличка с датами*/
+.acor-container input:checked + label + .acor-body {
+  display: block;
+  height: auto;
+  margin-top: -5px;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 0 0 5px 5px;
+  /*Радиусы выпадающей таблички*/
+  z-index: 50;
+}
+/* Стиль СТРОЧЕК даты выезда */
+.tab button {
+  display: block;
+  background-color: inherit;
+  /*если отменить фон даты становится светлым*/
+  border-radius: 2px;
+  color: #000000;
+  /*Цвет текста выезда*/
+  padding: 5px 5px;
+  width: 100%;
+  border: none;
+  /*outline: none;*/
+  text-align: left;
+  cursor: pointer;
+  transition: 0.35s;
+  /*Появление надписи даты и названия*/
   font-size: 12px;
-  box-shadow: -2px -2px 5px #0a0a0a;
-  /*border: 2px solid red;*/
-  /*обводка*/
-  transition: all 0.3s;
-  /*position: absolute;
-	z-index: 99;*/
-  animation-delay: 1s;
-  /*&:hover {
-       transform: scale(1.05);	  	
-	   box-shadow: -12px -12px 15px #0a0a0a;	
-       background-color: lighten(@btn-color, 10%);
-	   &:focus {
-			transform: scale(1);				
-			box-shadow: 2px 2px 10px #0a0a0a;	
-			background-color: @btn-color;
-		}
-	}*/
+  /*шрифт даты выезда и его названия*/
 }
-a {
+/* Изменение цвета даты выезда при наведении */
+/*.tab button:hover {
+    background-color: #ddd; 
+	box-shadow: -2px -2px 5px #0a0a0a;
+	
+}*/
+/* Выделение и тень надписи даты выезда */
+.tab button.active {
+  background-color: #5BC0DE;
+  box-shadow: -1px -1px 3px #0a0a0a;
   color: #ffffff;
-}
-a:hover {
-  text-decoration: none;
 }
 .fotorama {
   display: inline-block;
   /*position: absolute;*/
-  margin-top: 20px;
-  margin-bottom: 20px;
-  animation-delay: 0.5s;
-  transition: all 0.3s;
-}
-h3 {
-  font-family: Tahoma, Sans-serif;
-  color: #ffffff;
-  font-size: 25px;
-  padding-bottom: 10px;
-}
-li {
-  margin-left: -40px;
-  padding: 10px;
-  list-style-type: none;
-}
-.box {
-  height: 700px;
+  margin-top: 30px;
+  /*animation-delay: 1s;*/
+  /*transition: all 0.3s;*/
+  /*Не помню что запускает*/
 }
 .button {
   background-color: #5BC0DE;
   height: 40px;
+  margin-top: 10px;
   color: #ffffff;
-  margin-top: 0px;
   font-size: 12px;
   border: none;
   border-radius: 8px;
   box-shadow: -2px -2px 5px #0a0a0a;
+  /*Тень кнопок основных*/
   /*z-index: 90;*/
-  transition: all 0.3s;
+  transition: all 0.5s;
+  text-decoration: none;
 }
 .button:hover {
   transform: scale(1.05);
   /*color: #CF231F;*/
+  text-decoration: none;
   box-shadow: -12px -12px 15px #0a0a0a;
   background-color: #85d0e7;
 }
@@ -120,8 +211,8 @@ li {
   transform: scale(1);
   box-shadow: 2px 2px 10px #0a0a0a;
   background-color: #5BC0DE;
-  border: none;
 }
+/*Анимация вылета кнопок*/
 .bt-1 {
   animation-delay: 1.4s;
 }
@@ -139,33 +230,4 @@ li {
 }
 .bt-6 {
   animation-delay: 1.9s;
-}
-/*медиа запросы*/
-@media (max-width: 992px) {
-  /*h2	{
-		font-size: 40px;
-		font-weight: 100;
-	}*/
-  .button {
-    font-size: 20px;
-    margin-top: 10px;
-  }
-  .box {
-    height: 250px;
-  }
-}
-@media (max-width: 768px) {
-  /*.header-vihod {
-		font-size: 20px;				
-	}*/
-  .goroda {
-    font-size: 15px;
-  }
-  .fotorama {
-    data-width: 100px;
-  }
-  .button {
-    font-size: 20px;
-    margin-top: 10px;
-  }
 }
