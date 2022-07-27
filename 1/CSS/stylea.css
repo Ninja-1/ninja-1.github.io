@@ -232,3 +232,17 @@ h2 {
 .bt-6 {
   animation-delay: 1.9s;
 }
+@media (max-width: 767px) {
+  .button {
+    font-size: 8px;
+  }
+  .acor-container {
+    height: 250px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .acor-container label {
+    font-size: 12px;
+  }
+}
