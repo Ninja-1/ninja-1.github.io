@@ -2,6 +2,10 @@
 /*было #F0AD4E желтое*/
 /*было #509b50 зеленоватое*/
 /*было желтоватое #fade0a*/
+.colortext {
+  color: red;
+  /*Цвет указателя NEW*/
+}
 /*
 body{
     background-image: url(https://res.cloudinary.com/dichsudvk/image/upload/v1654282847/Neposedy/1_tarh9j.png);
