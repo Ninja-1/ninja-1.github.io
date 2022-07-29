@@ -17,6 +17,9 @@ body{
 /*img {
 	width: 100%;
 }*/
+body {
+  background-color: #5BC0DE;
+}
 .main {
   background: #5BC0DE url(../img/41_.jpg) center no-repeat;
   background-size: cover;
