@@ -21,12 +21,12 @@
   /*Звголовок в центр*/
 }
 body {
-  background-color: #5BC0DE;
+  background-color: #337AB7;
 }
 h2 {
   margin-top: -20px;
   font-family: Tahoma, Sans-serif;
-  color: #5BC0DE;
+  color: #337AB7;
   /*Цвет заголовка*/
   text-shadow: 0px 0px 7px green;
   font-size: 45px;
@@ -65,7 +65,7 @@ h2 {
 /*Кнопка с надписью ГОДа*/
 .acor-container label {
   cursor: pointer;
-  background-color: #5BC0DE;
+  background-color: #337AB7;
   display: block;
   padding: 10px 10px;
   width: 100%;
@@ -131,7 +131,7 @@ h2 {
 }
 /*Кнопка ГОДА нажатая*/
 .acor-container input:checked + label {
-  background-color: #5BC0DE;
+  background-color: #337AB7;
   display: block;
   color: #FFF;
   box-shadow: 0px 0px 5px #0a0a0a;
@@ -181,7 +181,7 @@ h2 {
 }*/
 /* Выделение и тень надписи даты выезда */
 .tab button.active {
-  background-color: #5BC0DE;
+  background-color: #337AB7;
   box-shadow: -1px -1px 3px #0a0a0a;
   color: #ffffff;
 }
@@ -194,11 +194,11 @@ h2 {
   /*Не помню что запускает*/
 }
 .button {
-  background-color: #5BC0DE;
+  background-color: #337AB7;
   height: 40px;
   margin-top: 10px;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 16px;
   border: none;
   border-radius: 8px;
   box-shadow: -2px -2px 5px #0a0a0a;
@@ -212,12 +212,12 @@ h2 {
   /*color: #CF231F;*/
   text-decoration: none;
   box-shadow: -12px -12px 15px #0a0a0a;
-  background-color: #85d0e7;
+  background-color: #4f93ce;
 }
 .button:hover:focus {
   transform: scale(1);
   box-shadow: 2px 2px 10px #0a0a0a;
-  background-color: #5BC0DE;
+  background-color: #337AB7;
 }
 /*Анимация вылета кнопок*/
 .bt-1 {
@@ -238,10 +238,12 @@ h2 {
 .bt-6 {
   animation-delay: 1.9s;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .button {
-    font-size: 10px;
+    font-size: 14px;
   }
+}
+@media (max-width: 767px) {
   .acor-container {
     height: 250px;
   }
@@ -249,6 +251,6 @@ h2 {
     font-size: 35px;
   }
   .acor-container label {
-    font-size: 12px;
+    font-size: 18px;
   }
 }

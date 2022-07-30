@@ -1,5 +1,5 @@
-@btn-color: #5BC0DE; /*было #F0AD4E желтое*/
-@neposedy: #5BC0DE; /*было #509b50 зеленоватое*/
+@btn-color: #337AB7; /*было #F0AD4E желтое, #5BC0DE голубое*/
+@neposedy: #337AB7; /*было #509b50 зеленоватое*/
 @all-text: #ffffff;
 @neposedy-shadow: green; /*было желтоватое #fade0a*/
 .colortext {
@@ -47,7 +47,8 @@ body {
 .goroda{	
     color: @neposedy;
 	font-size: 25px;
-    text-shadow: 0px 0px 40px #101010;
+	font-weight: 600;
+    text-shadow: 1px 1px 40px @neposedy-shadow;
 	animation-delay: 1s;
 	padding-top: 0px;
 }
@@ -116,7 +117,7 @@ a:hover {
 		font-size: 40px;		
 	}
 	.goroda {
-		font-size: 15px;
+		font-size: 20px;
 	}
 	.conteiner-2{
     padding-top: 20px;
