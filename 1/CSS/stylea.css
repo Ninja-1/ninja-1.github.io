@@ -37,8 +37,10 @@ h2 {
 }
 .acor-container {
   margin: 30px 0;
-  height: 200px;
+  height: 350px;
   /*Высота блока с датами выездов*/
+  display: inline-block;
+  /*позволяет не налазить стайдеру на кнопки на узком экране!!*/
 }
 .acor-container .acor-body {
   width: calc(100% - 20px);
@@ -56,7 +58,7 @@ h2 {
   font-size: 16px;
   /*box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);*/
   /*непонятно чья тень!*/
-  z-index: 50;
+  /*z-index: 50;*/
 }
 /*не понятно для чего*/
 /*.acor-container .acor-body p{  		
@@ -75,9 +77,9 @@ h2 {
   box-sizing: border-box;
   border-radius: 8px;
   /*Радиус кнопки*/
-  z-index: 100;
+  /*z-index: 100;*/
   font-family: Verdana, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   /*шрифт ГОДА*/
   font-weight: 550;
   /*жирный шрифт*/
@@ -136,7 +138,7 @@ h2 {
   color: #FFF;
   box-shadow: 0px 0px 5px #0a0a0a;
   /*Тень нажатой кнопки ГОДА*/
-  z-index: 100;
+  /*z-index: 100;*/
 }
 /*поворот стрелки:*/
 /*.acor-container input:checked + label:before {
@@ -152,7 +154,7 @@ h2 {
   padding: 5px 10px;
   border-radius: 0 0 5px 5px;
   /*Радиусы выпадающей таблички*/
-  z-index: 50;
+  /*z-index: 50;*/
 }
 /* Стиль СТРОЧЕК даты выезда */
 .tab button {
