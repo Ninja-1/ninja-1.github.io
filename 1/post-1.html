@@ -47,7 +47,7 @@
    <div class="row">
 	   <div class="bt-1"> 
 	   <a href="index.html">
-		<div class="col-md-2 col-sm-2 col-xs-4"><button class="button btn-block form-btn">Главная</button></div>
+		<div class="col-xs-4 col-sm-2 col-md-2"><button class="button btn-block form-btn">Главная</button></div>
 	   </a>
 	   </div>
 
@@ -77,7 +77,7 @@
 
 	   <div class="bt-6">
 	   <a href="post-6.html">
-		<div class="col-md-2 col-sm-2 col-xs-4"><button class="button btn-block form-btn">Юмор</button></div>
+		<div class="col-md-2 col-sm-2 col-xs-4"><button class="button btn-block form-btn">Мы шутим</button></div>
 		</a>
 	   </div>   
    </div>
@@ -90,7 +90,7 @@
      
    <div class="acor-container">
 <!--1-я кнопка аккордиона-->
-    <input type="radio" name="acor" id="acor1" checked="checked" />
+    <input type="radio" name="acor" id="acor1" checked="checked" /> <!--checked="checked"-->
     <label for="acor1">2022</label>
     <div class="acor-body">
       
@@ -103,20 +103,26 @@
     
 <!--2-я кнопка аккордиона-->
     <input type="radio" name="acor" id="acor2" />
-    <label for="acor2">2021</label>
+    <label for="acor2">2021<span class="colortext"><sup>new</sup></span></label>
     <div class="acor-body">
-       
+     
+       <!--Вставка  даты выездов-->  
        <div class="tab">
   
+  <button class="tablinks" onclick="openCity(event, 'Post-1-2021_12_25')">25 декабря З.Клин - Л.Лиман (ч/з столик)<span class="colortext"><sup>new</sup></span></button>
   <button class="tablinks" onclick="openCity(event, 'Post-1b')">17 октября Николаев</button>
   <button class="tablinks" onclick="openCity(event, 'Post-1c')">3 октября Райгородок</button>
-  <button class="tablinks" onclick="openCity(event, 'Post-1-2021_01_23')">23 января Студенок<span class="colortext"><sup>new</sup></span></button>
+  <button class="tablinks" onclick="openCity(event, 'Post-1-2021_09_12')">12 сентября Форпостная<span class="colortext"><sup>new</sup></span></button>
+  
+  <button class="tablinks" onclick="openCity(event, 'Post-1-2021_05_15')">15 мая Студенок Грибы<span class="colortext"><sup>new</sup></span></button>  
+  <button class="tablinks" onclick="openCity(event, 'Post-1-2021_02_22')">22 феврфля Голубые ч/з подвесной<span class="colortext"><sup>new</sup></span></button>    
+  <button class="tablinks" onclick="openCity(event, 'Post-1-2021_01_23')">23 января Студенок</button>
 </div> 
     </div>
     
 <!--3-я кнопка аккордиона-->  
     <input type="radio" name="acor" id="acor3" />
-    <label for="acor3">2020<span class="colortext"><sup>new</sup></span></label>
+    <label for="acor3">2020</label>
     <div class="acor-body">
     
       
@@ -125,7 +131,7 @@
   
   <button class="tablinks" onclick="openCity(event, 'Post-1f')">25 декабря Брусино</button>
   <button class="tablinks" onclick="openCity(event, 'Post-1e')">14 октября Аппендицит</button>
-  <button class="tablinks" onclick="openCity(event, 'Post-1-2020_03_08')">8 марта Озера<span class="colortext"><sup>new</sup></span></button>
+  <button class="tablinks" onclick="openCity(event, 'Post-1-2020_03_08')">8 марта Озера</button>
 </div>   
        
         
@@ -133,15 +139,15 @@
     
 <!--4-я кнопка аккордиона-->
     <input type="radio" name="acor" id="acor4" />
-    <label for="acor4">2019<span class="colortext"><sup>new</sup></span></label>
+    <label for="acor4">2019</label>
     <div class="acor-body">
        
        <div class="tab">
   
   
-  <button class="tablinks" onclick="openCity(event, 'Post-1-2019_12_25')">25 декабря Зеленый Клин<span class="colortext"><sup>new</sup></span></button>
-  <button class="tablinks" onclick="openCity(event, 'Post-1-2019_10_26')">26 октября Букино<span class="colortext"><sup>new</sup></span></button>
-  <button class="tablinks" onclick="openCity(event, 'Post-1-2019_10_13')">13 октября Ямполь<span class="colortext"><sup>new</sup></span></button>
+  <button class="tablinks" onclick="openCity(event, 'Post-1-2019_12_25')">25 декабря Зеленый Клин</button>
+  <button class="tablinks" onclick="openCity(event, 'Post-1-2019_10_26')">26 октября Букино</button>
+  <button class="tablinks" onclick="openCity(event, 'Post-1-2019_10_13')">13 октября Ямполь</button>
 </div> 
     </div>
     
@@ -178,8 +184,7 @@
 				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1657634585/Post-1a/14_mupgai.jpg" alt="">
 				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1657634585/Post-1a/15_k3hvua.jpg" alt="">
 						
-						
-						<!--<img src="img/Post-1a/1.jpg" alt="">-->
+												
 						
 			</div>
   
@@ -268,8 +273,7 @@
 				
 			</div>
  
-  <!--<h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>-->
+ 
 </div>
 
 
@@ -492,6 +496,7 @@
 			</div>
 </div>
 
+
 <div id="Post-1-2021_01_23" class="tabcontent">
 	<div class="col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0 col-sm-8 col-sm-offset-0 col-xs-12 col-xs-offset-0 fotorama animate__animated animate__fadeIn" data-allowfullscreen="true" data-loop="true"> 
 																	 
@@ -524,6 +529,170 @@
 						<!--<img src="img/Post-1d/2.jpg" alt="">-->
 					
 			</div>
+</div>
+
+
+<div id="Post-1-2021_05_15" class="tabcontent">
+	<div class="col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0 col-sm-8 col-sm-offset-0 col-xs-12 col-xs-offset-0 fotorama animate__animated animate__fadeIn" data-allowfullscreen="true" data-loop="true"> 
+																	 
+				
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/1_eajtgv.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/2_maf3zm.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/3_sl0guo.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/4_sz6jbo.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/5_yjebv2.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/6_wtij93.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/7_py8hho.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/8_zp0oh2.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/9_uxxdrh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/10_y1mekv.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/11_s3j11d.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/12_xvdqgh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/13_r1gw2j.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/14_qd8azt.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/15_rc6ent.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/16_atslak.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/17_qdtngj.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/18_iamcyx.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/19_zpfwug.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/20_yqyb8d.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/21_vupabl.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/22_u71ymc.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/23_kl2gbh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659543233/Post-1-2021_05_15/24_otcsbf.jpg" alt="">
+		
+				
+					
+						<!--<img src="img/Post-1d/2.jpg" alt="">-->
+					
+			</div>
+</div>
+
+
+<div id="Post-1-2021_02_22" class="tabcontent">
+	<div class="col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0 col-sm-8 col-sm-offset-0 col-xs-12 col-xs-offset-0 fotorama animate__animated animate__fadeIn" data-allowfullscreen="true" data-loop="true"> 
+																	 
+				
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/1_fkra8h.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/2_jy0aeh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/3_ay8l2q.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/4_hcmy7b.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/5_qri4yn.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/6_sqzlou.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/7_k1bmea.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/8_z6ayyi.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/9_e235qx.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/10_u3jqyv.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/11_abiuw5.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/12_ixu33w.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/13_x9ceqp.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/14_a29lol.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/14a_nmdlv2.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/14b_nfsdzh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/15_ouwghf.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/16_nn9rxr.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/17_qv4xkq.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/18_wrpeg2.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/19_apuk4a.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/20_cdjhkh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/21_s1hjdg.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/22_bv9byc.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/23_zbgrqx.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/24_j4xawn.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/25_wxzqr1.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/26_w99zrv.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/27_xf9nnh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/28_keynt8.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659545898/Post-1-2021_02_22/29_sd1f8j.jpg" alt="">
+		
+		
+				
+					
+						<!--<img src="img/Post-1d/2.jpg" alt="">-->
+					
+			</div>
+</div>
+
+
+<div id="Post-1-2021_09_12" class="tabcontent">
+	<div class="col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0 col-sm-8 col-sm-offset-0 col-xs-12 col-xs-offset-0 fotorama animate__animated animate__fadeIn" data-allowfullscreen="true" data-loop="true"> 
+																	 
+				
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/1_cv1fal.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/2_yc4c1s.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/3_zlqbme.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/4_orcynq.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/5_qjzef1.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/6_lrxhlv.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/7_wyi1ko.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/8_sakpe5.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/9_lwyvzo.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/10_eekl3y.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/11_rbuvad.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/12_r0we4r.jpg" alt="">
+		<a href="https://youtu.be/iegv7N2eXTM"></a>
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/13_e7z8oz.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/14_fno6sg.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/15_ipbqov.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/16_xyhzm7.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/17_bw1iki.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/18_uottfy.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/19_d5myde.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/20_yxaymo.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/21_ub1xnn.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/22_dsninr.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/23_i0qsbo.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/24_hjt5vt.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/25_zngfey.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659553272/Post-1-2021_09_12/26_kcoat4.jpg" alt="">
+		
+		
+		
+				
+					
+						<!--<img src="img/Post-1d/2.jpg" alt="">-->
+					
+			</div>
+</div>
+
+
+<div id="Post-1-2021_12_25" class="tabcontent">
+	<div class="col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0 col-sm-8 col-sm-offset-0 col-xs-12 col-xs-offset-0 fotorama animate__animated animate__fadeIn" data-allowfullscreen="true" data-loop="true"> 
+																	 
+				
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/1_yy18a6.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/2_tewfbz.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/3_t4t8f8.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/4_qajxdh.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/5_mo3hf4.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/6_j3llo8.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/7_fomk5t.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/8_kezpvj.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/9_nst6vj.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/10_woaduw.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/11_f7xg83.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/12_ytwhcl.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/13_ezv7kj.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/14_smnrfu.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/15_rl7xop.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/16_p5bwui.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/17_bnpe4i.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/18_qwy5de.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/19_hbox6m.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/20_dh62ba.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/21_fuzpcp.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/22_uwftfw.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/23_vhejvv.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/24_s2izaz.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/25_hohlsl.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/26_wlixwi.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/27_wcgbpi.jpg" alt="">
+				<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1659623054/Post-1-2021_12_25/28_gbbc5k.jpg" alt="">
+				
+						
+						
+			</div>
+
 </div>
 
 
