@@ -6,11 +6,31 @@
   color: red;
   /*Цвет указателя NEW*/
 }
-.foto {
-  display: block;
-  position: absolute;
-  margin-left: 50%;
-  transform: translateX(-700px);
+.main-fotohead-a {
+  background: url(../img/h12.JPG) center center no-repeat;
+}
+/*.main-fotohead-b*/
+.main-fotohead-c {
+  background: url(../img/h31.JPG) center center no-repeat;
+}
+.main-fotohead-d {
+  background: url(../img/h411.JPG) center center no-repeat;
+}
+.main-fotohead-e {
+  background: url(../img/h411.JPG) center center no-repeat;
+}
+.main-fotohead-f {
+  background: url(../img/h61.jpg) center center no-repeat;
+}
+.main-fotohead-a,
+.main-fotohead-c,
+.main-fotohead-d,
+.main-fotohead-e,
+.main-fotohead-f {
+  background-size: cover;
+  min-height: 950px;
+  /*высота картинки так не скачет при обновлении*/
+  animation-delay: 1s;
 }
 .header-vihod {
   display: inline-block;
