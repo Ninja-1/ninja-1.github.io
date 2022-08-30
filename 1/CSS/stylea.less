@@ -1,28 +1,30 @@
-@btn-color: #337AB7; /*было #F0AD4E желтое*/
-@neposedy: #337AB7; /*было #509b50 зеленоватое*/
+@btn-color: #9CA074; /*было #F0AD4E желтое, #5BC0DE голубое, #337AB7 синее*/
+@neposedy: #ffffff; /*было #509b50 зеленоватое и синее #337AB7*/
 @all-text: #ffffff;
-@neposedy-shadow: green; /*было желтоватое #fade0a*/
+@menu-viezdov: #DBCEC2; /*Было в аккордеоне #BFE2FF*/
+@neposedy-shadow: #9CA074; /*было желтоватое #fade0a* и зеленое green*/
 .colortext {
 	color: red; /*Цвет указателя NEW*/
 }
 
+
 .main-fotohead-a{
-	background: url(../img/h12.JPG) center center no-repeat;
+	background: url(../img/h12_.JPG) center center no-repeat;
 	
 }
 /*.main-fotohead-b*/
 .main-fotohead-c{
-	background: url(../img/h31.JPG) center center no-repeat;
+	background: url(../img/h31_.JPG) center center no-repeat;
 }
 
 .main-fotohead-d{
-	background: url(../img/h411.JPG) center center no-repeat;	
+	background: url(../img/h411_.JPG) center center no-repeat;	
 }
 .main-fotohead-e{
-	background: url(../img/h411.JPG) center center no-repeat;	
+	background: url(../img/h51_.JPG) center center no-repeat;	
 }
 .main-fotohead-f{
-	background: url(../img/h61.jpg) center center no-repeat;	
+	background: url(../img/h61_.jpg) center center no-repeat;	
 }
 
 .main-fotohead-a,
@@ -31,7 +33,8 @@
 .main-fotohead-e,
 .main-fotohead-f{
 	background-size: cover;
-	min-height: 950px; /*высота картинки так не скачет при обновлении*/
+	height: 100vh;
+	/*min-height: 950px;*/ /*высота картинки так не скачет при обновлении*/
 	animation-delay: 1s;
 }
 
@@ -68,7 +71,7 @@ h2 {
     margin: 0 auto;
     height: 0;
     color: rgba(0, 0, 0, 0);
-    background-color: #BFE2FF;
+    background-color: @menu-viezdov;
     line-height: 10px;
     /*padding: 0 10px*/;
     box-sizing: border-box;
@@ -91,7 +94,7 @@ h2 {
     display: block;
     padding: 10px 10px;
     width: 100%;
-    color: #BFE2FF; /*Цвет надписи года*/
+    color: @menu-viezdov; /*Цвет надписи года*/
     font-weight: 100;
     box-sizing: border-box;
 	border-radius: 8px; /*Радиус кнопки*/
@@ -257,6 +260,24 @@ h2 {
 	}
     
 }
+/*страница ссылок*/
+h3{
+	display: inline-block;
+	color: @all-text;
+	text-align: center;
+	
+}
+
+.pos{
+	display: inline-block;
+	margin-left: 20px;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px #0a0a0a;
+	margin-top: 20px;
+}
+
+
 /*Анимация вылета кнопок*/
 .bt-1 {
 	animation-delay: 1.4s;

@@ -92,33 +92,63 @@
       	<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
      
    <div class="acor-container">
+   
+<!--<span class="colortext"><sup> new</sup></span>-->
+   
 <!--1-я кнопка аккордиона-->
-    <input type="radio" name="acor" id="acor1" checked="checked" />
+    <input type="radio" name="acor" id="acor1" /> <!--checked="checked"-->
     <label for="acor1">2021</label>
     <div class="acor-body">
       
        <!--Вставка  даты выездов-->
        <div class="tab">
-  			<button class="tablinks" onclick="openCity(event, 'Post-4a-may')" id="defaultOpen">май Байдарки р.Северский Донец</button>
+  			<button class="tablinks" onclick="openCity(event, 'Post-4a-may')">май Байдарки р.Северский Донец</button>
 	   </div>
         
     </div>
     
 <!--2-я кнопка аккордиона-->
+   
     <input type="radio" name="acor" id="acor2" />
-    <label for="acor2">2018</label> <!--Новое добавление-->
+    <label for="acor2">2020<span class="colortext"><sup> new</sup></span></label>
+    <div class="acor-body">
+       
+       <div class="tab">
+  
+  <button class="tablinks" onclick="openCity(event, 'Post-4-2020-05-baidarki')">май Байдарки р.Северский Донец<span class="colortext"><sup>new</sup></span></button>
+  
+</div> 
+    </div>    
+
+    
+<!--3-я кнопка аккордиона-->
+   
+    <!--<input type="radio" name="acor" id="acor3" />
+    <label for="acor3">2019<span class="colortext"><sup> new</sup></span></label>
+    <div class="acor-body">
+       
+       <div class="tab">
+  
+  <button class="tablinks" onclick="openCity(event, 'Post-4...')">...</button>
+  
+</div> 
+    </div>-->
+    
+<!--4-я кнопка аккордиона-->
+    <input type="radio" name="acor" id="acor4" />
+    <label for="acor4">2018</label>
     <div class="acor-body">
        
        <div class="tab">
   
   <button class="tablinks" onclick="openCity(event, 'Post-4a-elbrus')">июль Приэльбрусье и Эльбрус</button>
-  <!--<button class="tablinks" onclick="openCity(event, 'Post-4a')">...</button>-->
+  
 </div> 
     </div>
     
-<!--3-я кнопка аккордиона-->  
-    <input type="radio" name="acor" id="acor3" />
-    <label for="acor3">2016</label>
+<!--5-я кнопка аккордиона-->  
+    <input type="radio" name="acor" id="acor5" />
+    <label for="acor5">2016</label>
     <div class="acor-body">
     
       
@@ -132,9 +162,9 @@
         
     </div>
     
-<!--4-я кнопка аккордиона-->  
-    <input type="radio" name="acor" id="acor4" />
-    <label for="acor4">2015</label>
+<!--6-я кнопка аккордиона-->  
+    <input type="radio" name="acor" id="acor6" />
+    <label for="acor6">2015</label>
     <div class="acor-body">
     
       
@@ -146,18 +176,54 @@
       </div>   
        
         
-    </div> 
+    </div>
     
-<!--5-я кнопка аккордиона-->  
-    <input type="radio" name="acor" id="acor5" />
-    <label for="acor5">1979<span class="colortext"><sup> new</sup></span></label>
+    
+    
+<!--7-я кнопка аккордиона-->  
+    <input type="radio" name="acor" id="acor7" checked="checked"/>
+    <label for="acor7">2005<span class="colortext"><sup> new</sup></span></label>
     <div class="acor-body">
     
       
        <!--Вкладка дат выезда под кнопку ГОДА--> 
       <div class="tab">
   
-  <button class="tablinks" onclick="openCity(event, 'Post-4-1979_08_baidarki')">август Байдарки р.Ворскла<span class="colortext"><sup> new</sup></span></button>
+  <button class="tablinks" onclick="openCity(event, 'Post-4-2005_05_Krim')" id="defaultOpen">май Крым<span class="colortext"><sup> new</sup></span></button>
+
+      </div>   
+       
+        
+    </div>
+    
+    
+<!--8-я кнопка аккордиона-->  
+    <input type="radio" name="acor" id="acor8" />
+    <label for="acor8">2004<span class="colortext"><sup> new</sup></span></label>
+    <div class="acor-body">
+    
+      
+       <!--Вкладка дат выезда под кнопку ГОДА--> 
+      <div class="tab">
+  
+  <button class="tablinks" onclick="openCity(event, 'Post-4-2004_05_Karpaty')">май Карпаты<span class="colortext"><sup> new</sup></span></button>
+
+      </div>   
+       
+        
+    </div>   
+    
+    
+<!--9-я кнопка аккордиона-->  
+    <input type="radio" name="acor" id="acor9" />
+    <label for="acor9">1979</label>
+    <div class="acor-body">
+    
+      
+       <!--Вкладка дат выезда под кнопку ГОДА--> 
+      <div class="tab">
+  
+  <button class="tablinks" onclick="openCity(event, 'Post-4-1979_08_baidarki')">август Байдарки р.Ворскла</button>
   
       </div>   
        
@@ -437,7 +503,303 @@
 </div>
 
 
+<div id="Post-4-2005_05_Krim" class="tabcontent">
+ 
+ 	<div class="col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0 col-sm-8 col-sm-offset-0 col-xs-12 col-xs-offset-0 fotorama animate__animated animate__fadeIn" data-allowfullscreen="true" data-loop="true"> 
+					
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/1_xjvt71.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/2_y3euzo.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/3_whdrjh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/4_vykyip.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/5_zlhj6w.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/6_rtbnnn.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/7_psukxc.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/8_xwt82t.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/9_kyu2kl.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/10_xt0blp.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/11_p9zkzb.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/12_gv06ub.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/13_rv90yx.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/14_jozzby.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/15_kdxeaz.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/16_q8wnpb.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/17_ropal6.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/18_gwdnso.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/19_apr93x.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/20_i5fzvh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/21_jtqnlz.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/22_xtqomb.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/23_jbotjv.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/24_pe1bpf.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/25_dsfjn2.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/26_yq4fil.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/27_om2mp1.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/28_hkd1co.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/29_r58beb.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/30_do3m8t.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/31_id2qiw.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/32_vcdj1u.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/33_p2jhgg.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/34_dib90b.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/35_zzbdib.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/36_mn0st5.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/37_f5kvey.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/38_dswg3h.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/39_hyvino.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/40_tttgil.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/41_vx2nzm.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/42_baphpr.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/43_hcdnab.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/44_j1sbr8.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/45_gz3hju.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/46_gvhjqk.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/47_egtvg3.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/48_ychcqx.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/49_rethwt.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/50_x7igl3.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/51_ad1vc2.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/52_eb3wsn.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/53_vlgxun.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/54_mvhsvy.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/55_suhjum.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/56_h1y1he.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/57_xrsnou.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/58_drkirb.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/59_ty9dfg.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/60_ub4lxs.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/61_bvm5wu.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/62_wa6yez.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/63_p2wjak.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/64_y1ruc2.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/65_n4otdt.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/66_nxw0pu.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/67_fqtcsi.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/68_v48ast.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/69_zxqimp.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/70_xmwg5u.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/71_vtkh6n.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/72_qqact9.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/73_ob2pu7.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/74_it6xaf.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/75_twelh9.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/76_ay7p9i.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/77_wi9pwu.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/78_al2jz8.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/79_uptnpc.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/80_trnhta.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/81_wad9ml.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/82_oqfj20.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/83_n1yojz.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/84_ztadmr.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/85_hortxm.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/86_his0k6.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/87_tiptjk.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/88_ojvcvi.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/89_okpv52.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/90_i3ghtq.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/91_qmvk3q.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/92_qfan3l.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/93_aoczwp.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/94_hzsez5.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/95_gln7f5.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/96_c2uvxc.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/97_ct5uwp.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/98_fogcqt.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/99_zoelvq.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/100_kdzp6m.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/101_djui2e.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/102_q8dzfr.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/103_xnqfi1.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/104_pjqpax.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/105_mmnnch.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/106_rp4vb7.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/107_iqnncz.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/108_s9yncp.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/109_pp1xvb.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/110_i4nkgt.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/111_xo55ys.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/112_eca2an.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/113_ukn4tj.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/114_rme2no.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/115_nvyvth.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/116_mwv6kw.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/117_zsxhal.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/118_cqm4gz.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/119_wqllmo.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/120_hneae0.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/121_gdbpga.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/122_vl2com.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/123_x2eth1.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/124_yghtpd.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/125_yyjjxg.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/126_tbr0br.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/127_jrjkhz.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/128_guozb3.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/129_drcxot.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661594447/Post-4-2005_05_Krim/130_znh5ob.jpg" alt="">
+		<a href="https://youtu.be/__SsCyT-6dI" data-caption="Май 2005г Крым пешеходка"></a>
+		<a href="https://youtu.be/HuK_mAoH7Nw" data-caption="Май 2005г Крым (оседлая часть)"></a>
+	
+					
+					
+					<!--Сюда вставлять фотографии-->
+					
+				
+	</div>
+ 
+ 
+</div>
 
+
+<div id="Post-4-2004_05_Karpaty" class="tabcontent"> 
+  
+  <div class="col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0 col-sm-8 col-sm-offset-0 col-xs-12 col-xs-offset-0 fotorama animate__animated animate__fadeIn" data-allowfullscreen="true" data-loop="true"> <!--data-width="850"-->
+										
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/1_kkkg7t.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/2_gwhhma.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/3_pm0kvt.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/4_msknko.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/5_qq1bth.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/6_tqfb1y.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/7_rw7i06.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/8_xi0zpp.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/9_byvcv2.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/10_f6zdfo.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/11_z8x7w5.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/12_fq1ny5.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/13_l2qmhe.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/14_cyhdeh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/15_snz58s.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/16_waiz7o.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/17_l5ngoq.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/18_lceegx.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/19_lm4ckz.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/20_yn5jgh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/21_f0at7r.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/22_inpqft.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/23_inahn5.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/24_uswhjq.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/25_tq8t6a.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/26_j1efwk.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/27_tefvht.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/28_wxsmqy.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/29_jhfo6k.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/30_k1pigg.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/31_kls9so.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/32_w0a9x8.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/33_lutsxx.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/34_bm4tif.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/35_hugudf.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/36_sk4uvt.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/37_vrwrzw.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/38_s2utyo.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/39_hqpj5h.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/40_y0v5u5.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/41_tpublr.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/42_leai4v.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/43_fh5vyi.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/44_ay8mtl.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/45_njztfa.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/46_mhrvoh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/47_w2sem9.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/48_gyyo8l.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/49_iusmu3.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/50_rrmexh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/51_imu4cs.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/52_eqhi6c.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/53_yazk8b.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/54_okiy4k.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/55_yh3mx3.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/56_tm9k45.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/57_phowei.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/58_rgexzw.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/59_nha7j0.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/60_peftgl.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/61_zpjjb8.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/62_uqxztp.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/63_ppqlb5.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/64_xit5dn.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/65_wphd0z.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/66_zaspdh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/67_nakgji.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/68_vtwtpv.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/69_iwjueg.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/70_kyez9e.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/71_y4040l.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/72_qveu16.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/73_uyajpa.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/74_ouvdz9.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/75_kqode8.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/76_rkjulz.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/77_hrsyor.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/78_gfncew.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661599707/Post-4-2004_05_Karpaty/79_xqr5tm.jpg" alt="">
+					
+						
+					
+						
+			</div>
+  
+</div>
+
+
+<div id="Post-4-2020-05-baidarki" class="tabcontent">
+ 
+ 	<div class="col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0 col-sm-8 col-sm-offset-0 col-xs-12 col-xs-offset-0 fotorama animate__animated animate__fadeIn" data-allowfullscreen="true" data-loop="true"> 
+					
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/1_tuwwdf.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/2_tjzzoy.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/3_xws30d.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/4_ophybu.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/5_lsonhl.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/6_ezegto.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/7_ayk1q0.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/8_uo8zgo.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/9_m0njom.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/10_m8gheq.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/11_yvihhi.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/12_qmzqxk.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/13_hhg9ft.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/14_lmkyd7.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/15_droelr.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/16_j0fqop.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/17_d4kafz.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/18_vdtztp.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/19_hhijzh.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/20_dofcde.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/21_ypbgns.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/22_dhtzyi.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/23_fskd4f.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/24_pjzilk.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/25_ex0abo.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/26_xbtgwe.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/27_honsjv.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/28_cqq502.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/29_m97zlt.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/30_wyeqiu.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/31_kdwoxj.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/32_knhc62.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/33_en0dkr.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/34_l27fa7.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/35_dlmbvz.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/36_rvjswv.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/37_uwsjnq.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/38_sqqv4w.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/39_r0wglf.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/40_ufgcq4.jpg" alt="">
+		<img src="https://res.cloudinary.com/dichsudvk/image/upload/v1661693998/Post-4-2020-05-baidarki/41_fytktn.jpg" alt="">
+		
+					
+					
+					<!--Сюда вставлять фотографии-->
+					
+				
+	</div>
+	
+<!--Сюда вставлять СЛАЙДЕР-->
+ 
+ 
+</div>
 
 
 </div>
