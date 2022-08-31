@@ -6,7 +6,9 @@
 .colortext {
 	color: red; /*Цвет указателя NEW*/
 }
-
+body {
+   background-color: @btn-color; 
+}
 
 .main-fotohead-a{
 	background: url(../img/h12_.JPG) center center no-repeat;
@@ -33,9 +35,10 @@
 .main-fotohead-e,
 .main-fotohead-f{
 	background-size: cover;
-	height: 100vh;
+	height: 100vh; /*было 100vh - на высоту визуального экрана*/
+	
 	/*min-height: 950px;*/ /*высота картинки так не скачет при обновлении*/
-	animation-delay: 1s;
+	
 }
 
 
@@ -46,9 +49,7 @@
     height: 130px; /*высота строки*/
     text-align: center; /*Звголовок в центр*/ 
 }
-body {
-   background-color: @btn-color; 
-}
+
 h2 {
 	margin-top: -20px;	
     font-family: Tahoma, Sans-serif;

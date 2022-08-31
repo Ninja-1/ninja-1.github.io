@@ -7,6 +7,9 @@
   color: red;
   /*Цвет указателя NEW*/
 }
+body {
+  background-color: #9CA074;
+}
 .main-fotohead-a {
   background: url(../img/h12_.JPG) center center no-repeat;
 }
@@ -30,9 +33,9 @@
 .main-fotohead-f {
   background-size: cover;
   height: 100vh;
+  /*было 100vh - на высоту визуального экрана*/
   /*min-height: 950px;*/
   /*высота картинки так не скачет при обновлении*/
-  animation-delay: 1s;
 }
 .header-vihod {
   display: inline-block;
@@ -41,9 +44,6 @@
   /*высота строки*/
   text-align: center;
   /*Звголовок в центр*/
-}
-body {
-  background-color: #9CA074;
 }
 h2 {
   margin-top: -20px;
