@@ -7,9 +7,33 @@
   color: red;
   /*Цвет указателя NEW*/
 }
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
 body {
   background-color: #9CA074;
 }
+/*Видео*/
+/*.intro__mediaa {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh; 
+	overflow: hidden;	
+}
+.intro__mediaa-video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	transform: translate(-50%, -50%);
+}*/
+/*Фото*/
 .main-fotohead-a {
   background: url(../img/h12_.JPG) center center no-repeat;
 }
@@ -34,9 +58,11 @@ body {
   background-size: cover;
   height: 100vh;
   /*было 100vh - на высоту визуального экрана*/
+  animation-delay: 0.5s;
   /*min-height: 950px;*/
   /*высота картинки так не скачет при обновлении*/
 }
+/*конец ФОТО*/
 .header-vihod {
   display: inline-block;
   width: 100%;
@@ -292,5 +318,12 @@ h3 {
   }
   .acor-container label {
     font-size: 18px;
+  }
+  .main-fotohead-a,
+  .main-fotohead-c,
+  .main-fotohead-d,
+  .main-fotohead-e,
+  .main-fotohead-f {
+    height: 180vh;
   }
 }
