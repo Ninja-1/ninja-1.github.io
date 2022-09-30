@@ -14,13 +14,17 @@
 body {
    background-color: @btn-color; 
 }
+
+
 /*Видео*/
 /*.intro__mediaa {
 	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100vh; 
+	height: 600px; 
+	height: auto;
 	overflow: hidden;	
 }
 .intro__mediaa-video {
@@ -30,10 +34,11 @@ body {
 	min-width: 100%;
 	min-height: 100%;
 	object-fit: cover;
-	transform: translate(-50%, -50%);
-}*/
+	transform: translate(-50%, -50%);*/
+}
 /*Фото*/
 .main-fotohead-a{
+	/*position: fixed;*/
 	background: url(../img/h12_.JPG) center center no-repeat;
 	
 }
@@ -58,8 +63,8 @@ body {
 .main-fotohead-e,
 .main-fotohead-f{
 	background-size: cover;
-	height: 100vh; /*было 100vh - на высоту визуального экрана*/
-	animation-delay: 0.5s;
+	height: auto; /*было 100vh - на высоту визуального экрана*/
+	/*animation-delay: 0.5s;*/
 	
 	/*min-height: 950px;*/ /*высота картинки так не скачет при обновлении*/
 	
