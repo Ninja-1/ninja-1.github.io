@@ -42,6 +42,7 @@ body {
 	/*min-height: 100%;*/
 	object-fit: cover;
 	transform: translate(-50%, -50%);
+	z-index: 0;
 }
 /*.conteiner{
 	position: relative;
@@ -117,16 +118,29 @@ body {
 }
 
 .stepw{
-	width: 60px;
-	margin-top: -170px;
+	background: url(../img/S1-w.png) 0 0 no-repeat;
+	
+	border: solid 1px;
+	position: absolute;
+	
+	
+	/*width: 60px;
+	margin-top: -170px;*/
 	/*perspective-origin: center;*/
 	transform: perspective(400px) rotateX(50deg);
+	z-index: 100;
 }
 .container-2{
-    padding-top: 80px;
+	padding-top: 80px;
+	background: url(../img/S1-w.png);
+	border: solid 1px;
+	z-index: 100;
+	
 	/*padding-bottom: 200px;*/ /*отступ внизу после кнопок*/
 	
 }
+
+
 a:hover {
 	text-decoration: none;	
 }
@@ -205,12 +219,19 @@ a:hover {
 @media (max-width: 992px) {	
 	.goroda {
 		text-align: center;			
-	}	
+	}
+	.neposeda{
+		margin-left: -10px;
+	}
 }
 @media (max-width: 768px) {
 	.header {
-		font-size: 40px;		
-	}	
+		font-size: 50px;		
+	}
+	.neposeda{
+		margin-top: 48px;
+		height: 40px;
+	}
 	.goroda {
 		font-size: 20px;
 	}
@@ -225,8 +246,14 @@ a:hover {
 	}
 }
 @media (max-width: 480px){
-	.neposeda{
-		margin-top: 85px;
-		height: 40px;
+	.neposeda{		
+		margin-top: 8px;
+		height: 34px;		
+	}
+	.header {
+		font-size: 40px;		
+	}
+	.stepw{
+	background: none;	
 	}
 }
