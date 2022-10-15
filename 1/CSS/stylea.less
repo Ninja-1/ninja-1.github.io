@@ -1,8 +1,8 @@
-@btn-color: #9CA074; /*было #F0AD4E желтое, #5BC0DE голубое, #337AB7 синее*/
+@btn-color: #DCB56A; /*было #F0AD4E желтое, #5BC0DE голубое, #337AB7 синее, #9CA074 с видео в йолках*/
 @neposedy: #ffffff; /*было #509b50 зеленоватое и синее #337AB7*/
 @all-text: #ffffff;
 @menu-viezdov: #DBCEC2; /*Было в аккордеоне #BFE2FF*/
-@neposedy-shadow: #9CA074; /*было желтоватое #fade0a* и зеленое green*/
+@neposedy-shadow: #DCB56A; /*было желтоватое #fade0a* и зеленое green*/
 .colortext {
 	color: red; /*Цвет указателя NEW*/
 }
@@ -13,6 +13,7 @@
 }
 body {
    background-color: @btn-color; 
+	overflow-x: hidden;
 }
 
 
@@ -34,8 +35,8 @@ body {
 	min-width: 100%;
 	min-height: 100%;
 	object-fit: cover;
-	transform: translate(-50%, -50%);*/
-}
+	transform: translate(-50%, -50%);
+}*/
 /*Фото*/
 .main-fotohead-a{
 	/*position: fixed;*/
@@ -50,9 +51,9 @@ body {
 .main-fotohead-d{
 	background: url(../img/h411_.JPG) center center no-repeat;	
 }
-.main-fotohead-e{
+/*.main-fotohead-e{
 	background: url(../img/h51_.JPG) center center no-repeat;	
-}
+}*/
 .main-fotohead-f{
 	background: url(../img/h61_.jpg) center center no-repeat;	
 }
@@ -60,10 +61,14 @@ body {
 .main-fotohead-a,
 .main-fotohead-c,
 .main-fotohead-d,
-.main-fotohead-e,
+/*.main-fotohead-e,*/
 .main-fotohead-f{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	/*overflow: hidden;*/
 	background-size: cover;
-	height: auto; /*было 100vh - на высоту визуального экрана*/
+	/*height: auto;*/ /*было 100vh - на высоту визуального экрана*/
 	/*animation-delay: 0.5s;*/
 	
 	/*min-height: 950px;*/ /*высота картинки так не скачет при обновлении*/
@@ -195,7 +200,7 @@ h2 {
 	display: block;
     color: #FFF;
     box-shadow: -0px -0px 5px #0a0a0a; /*Тень нажатой кнопки ГОДА*/
-	/*z-index: 100;*/
+	
 	
 	
 
@@ -218,7 +223,7 @@ h2 {
 	color: #000;
     padding: 5px 10px;
 	border-radius: 0 0 5px 5px; /*Радиусы выпадающей таблички*/
-	/*z-index: 50;*/
+	
 }
 
 
@@ -231,7 +236,6 @@ h2 {
     padding: 5px 5px 10px; 
     width: 100%;
     border: none;	
-    /*outline: none;*/
     text-align: left;
     cursor: pointer;
     transition: 0.35s; /*Появление надписи даты и названия*/
@@ -258,8 +262,6 @@ h2 {
 	display: inline-block;
 	/*position: absolute;*/ 
 	margin-top: 30px;
-	/*animation-delay: 1s;*/
-	/*transition: all 0.3s;*/ /*Не помню что запускает*/
 }
 
 .button {
@@ -271,13 +273,11 @@ h2 {
 	line-height: 0.8; /*межстрочное расстояние*/
 	border: none;
 	border-radius: 8px;
-	box-shadow: -2px -2px 5px #0a0a0a;	/*Тень кнопок основных*/
-	/*z-index: 90;*/
+	box-shadow: -2px -2px 5px #0a0a0a;	/*Тень кнопок основных*/	
 	transition: all 0.5s;	
 	text-decoration: none;
 	&:hover {
-       transform: scale(1.05);	   
-	   /*color: #CF231F;*/	
+       transform: scale(1.05);  
 	   text-decoration: none;
 	   box-shadow: -12px -12px 15px #0a0a0a;	
        background-color: lighten(@btn-color, 10%);
@@ -307,7 +307,6 @@ h3{
 	margin-top: 20px;
 }
 
-
 /*Анимация вылета кнопок*/
 .bt-1 {
 	animation-delay: 1.4s;
@@ -327,6 +326,48 @@ h3{
 .bt-6 {
 	animation-delay: 1.9s;
 }
+
+
+/*ПАРАЛЛАКС*/
+.rock__1, .rock__2, .rock__3, .rock__4 {	
+	position: absolute;
+	margin-top: -20px;
+}
+
+h1{
+	padding-top: 680px;
+	position: sticky;
+	top: 0;
+	font-size: 50px;
+	text-align: center;
+	font-weight: 600;
+	letter-spacing: 5px;
+	color:#88957f;
+	text-shadow: -2px 1px 0 #ccc,
+				-2px 2px 0 #c9c9c9,
+				-2px 3px 0 #bbb,
+				-2px 4px 0 #b9b9b9,
+				-2px 5px 0 #aaa,
+				-2px 6px 1px rgba(0,0,0,.1),
+				-2px 0 5px rgba(0,0,0,.1),
+				-2px 1px 3px rgba(0,0,0,.3),
+				-2px 3px 5px rgba(0,0,0,.2),
+				-2px 5px 10px rgba(0,0,0,.25),
+				-2px 10px 10px rgba(0,0,0,.2),
+				-2px 20px 20px rgba(0,0,0,.15);
+	z-index: 90;
+	}
+.rock__3{
+	z-index: 95;
+}
+.rock__4{
+	z-index: 100;
+}
+/*Конец ПАРАЛЛАКСА*/
+
+
+
+
 
 @media (max-width: 991px) {
 	.button {
