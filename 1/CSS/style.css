@@ -271,4 +271,13 @@ a:hover {
   .stepw {
     background: none;
   }
+  .yolki {
+    height: 110px;
+  }
+  .deviz {
+    bottom: 2px;
+  }
+  .dev {
+    font-size: 10px;
+  }
 }
