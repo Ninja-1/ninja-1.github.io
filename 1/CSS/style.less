@@ -1,7 +1,7 @@
-@btn-color: #c9a454; /*было #F0AD4E желтое, #5BC0DE голубое, #337AB7 синее, #9CA074 с видео в йолках, #DCB56A*/
-@neposedy: #ffffff; /*было #509b50 зеленоватое и синее #337AB7*/
-@all-text: #ffffff;
-@neposedy-shadow: #9CA074; /*было желтоватое #fade0a* и зеленое green и синее #337AB*/
+@btn-color: #59859c; /*было #F0AD4E желтое, #5BC0DE голубое, #337AB7 синее, #9CA074 с видео в йолках, #DCB56A, #c9a454*/
+@neposedy: #dcdeda; /*было #509b50 зеленоватое и синее #337AB7*/
+@all-text: #dcdeda;
+@neposedy-shadow: #59859c; /*было желтоватое #fade0a* и зеленое green и синее #337AB*/
 .colortext {
 	color: red; /*Цвет указателя NEW*/
 }
@@ -31,7 +31,7 @@ body {
 	width: 100%;
 	height: 100%; 
 	overflow-x: hidden;
-	background: @btn-color url(../img/cover-3NG.png) center center no-repeat;
+	background: @btn-color url(../img/cover-4_.png) center center no-repeat;
 	background-size: cover;
 }
 .intro__media-video {
@@ -59,7 +59,7 @@ body {
 
 .neposeda{
 	display: block;
-	border: 2.5px solid #fff;
+	border: 2.5px solid #dcdeda;
 	position: absolute;
 	height: 73px;
 	margin-top: 68px;
@@ -114,10 +114,10 @@ body {
 	transform: scaleX(1);
 }
 .goroda{	
-    color: @neposedy;
+  color: @neposedy;
 	font-size: 25px;
 	font-weight: 600;
-    text-shadow: 1px 1px 40px @neposedy-shadow;
+  text-shadow: 1px 1px 40px @neposedy-shadow;
 	animation-delay: 0.5s;
 	padding-top: 0px;
 }
@@ -227,7 +227,8 @@ a:hover {
   text-align: center; 
   /*text-decoration-color: #c9a454;*/
   font-size: 15px;
-  color: #c9a454;
+  color: @neposedy;
+  text-shadow: 1px 1px 40px #000000;
 }
 
 
